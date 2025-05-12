@@ -8,8 +8,8 @@ namespace oopC_
 {
     internal class VipCustomer : Customer
     {
-        private string? NamePrefix { get; set; }
-        private decimal NegativeThreshold { get; set; }
+        public string? NamePrefix { get; set; }
+        public decimal NegativeThreshold { get; set; }
 
         public VipCustomer(string name, string surname, DateTime dob, string address, string mailAddress, decimal threshold) : base(name, surname, dob, address, mailAddress)
         {

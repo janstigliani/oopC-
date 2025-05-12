@@ -53,6 +53,25 @@ namespace oopC_
             //    Console.WriteLine(person.welcome());
             //}
 
+            var b1 = new BanckAccount("123456789", c1, e1);
+            b1.Operate(1000);
+            b1.Operate(-500);
+            b1.Operate(-2000);
+            Console.WriteLine(b1.GenerateReport());
+
+            var b2 = new CashBackBanckAccount("987654321", c2, e1);
+
+            b2.Operate(1000);
+            b2.Operate(-500);
+            b2.Operate(2000);
+            Console.WriteLine(b2.GenerateReport());
+
+            var b3 = new SavingBanckAccount("456789123", c3, e1);
+
+            b3.Operate(1000);
+            b3.Operate(-500);
+            b3.Operate(2000);
+            Console.WriteLine(b3.GenerateReport());
         }
     }
 }
